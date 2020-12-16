@@ -9,7 +9,7 @@ Mauricio Chacón Viales
 Jorge Ezquivel Poveda
 3er Cuatrimetre 2020
  */
-package diagramametodo;
+package proyecto;
 
 import javax.swing.JOptionPane;
 
@@ -61,11 +61,11 @@ public class Discos4
            int opcion1=0;
             Discos4 Dis4[]=new Discos4[3];
            do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el disco de electronica que desea:\n"
-             + "1.Marshmellow\n"
-             + "2.Martin Garrix\n"
-             + "3.Avicii\n"
-             + "4. Salir"));
+            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el disco de electronica que desea:"
+             + "\n1.Marshmello"
+             + "\n2.Martin Garrix"
+             + "\n3.Avicii"
+             + "\n4. Salir"));
             
              switch(opcion1)
           {
