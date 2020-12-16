@@ -1,7 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Universidad Fidélitas
+Curso Introducción a la progromación
+Programa Tienda Musical Listen
+Clase Instrumentos de Percusión
+Integrantes:
+Steven Campos Matamorros
+Mauricio Chacón Viales
+Jorge Ezquivel Poveda
+3er Cuatrimetre 2020
  */
 package diagramametodo;
 
@@ -14,15 +20,18 @@ public class InstrumentoBase3
     private String Nombre;
     private String Tipo;
 
-    public int getPrecio() {
+    public int getPrecio() 
+    {
         return Precio;
     }
 
-    public void setPrecio(int Precio) {
+    public void setPrecio(int Precio) 
+    {
         this.Precio = Precio;
     }
 
-    public String getNombre() {
+    public String getNombre() 
+    {
         return Nombre;
     }
 
@@ -30,11 +39,13 @@ public class InstrumentoBase3
         this.Nombre = Nombre;
     }
 
-    public String getTipo() {
+    public String getTipo() 
+    {
         return Tipo;
     }
 
-    public void setTipo(String Tipo) {
+    public void setTipo(String Tipo) 
+    {
         this.Tipo = Tipo;
     }
     
@@ -50,11 +61,11 @@ public class InstrumentoBase3
            int opcion1=0;
             InstrumentoBase3 Percusion[]=new InstrumentoBase3[3];
            do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de percusiom que desea:\n"
-             + "1.Bombo\n"
-             + "2.Platillos Dobles\n"
-             + "3.Cajon\n"
-                    + "4. Salir"));
+            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de percusiom que desea:"
+             + "\n1.Bombo"
+             + "\n2.Platillos Dobles\n"
+             + "\n3.Cajon"
+             + "\n4. Salir"));
             
              switch(opcion1)
           {
