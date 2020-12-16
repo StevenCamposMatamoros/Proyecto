@@ -9,7 +9,7 @@ Mauricio Chacón Viales
 Jorge Ezquivel Poveda
 3er Cuatrimetre 2020
  */
-package diagramametodo;
+package proyecto;
 
 import javax.swing.JOptionPane;
 
