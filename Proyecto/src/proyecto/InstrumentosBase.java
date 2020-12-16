@@ -1,7 +1,15 @@
 /*
-
+Universidad Fidélitas
+Curso Introducción a la progromación
+Programa Tienda Musical Listen
+Clase Instrumentos de Viento
+Integrantes:
+Steven Campos Matamorros
+Mauricio Chacón Viales
+Jorge Ezquivel Poveda
+3er Cuatrimetre 2020
  */
-package diagramametodo;
+package proyecto;
 
 import javax.swing.JOptionPane;
 
@@ -13,27 +21,33 @@ public class InstrumentosBase
     private String Nombre;
     private String Tipo;
 
-    public int getPrecio() {
+    public int getPrecio() 
+    {
         return Precio;
     }
 
-    public void setPrecio(int Precio) {
+    public void setPrecio(int Precio) 
+    {
         this.Precio = Precio;
     }
 
-    public String getNombre() {
+    public String getNombre() 
+    {
         return Nombre;
     }
 
-    public void setNombre(String Nombre) {
+    public void setNombre(String Nombre) 
+    {
         this.Nombre = Nombre;
     }
 
-    public String getTipo() {
+    public String getTipo() 
+    {
         return Tipo;
     }
 
-    public void setTipo(String Tipo) {
+    public void setTipo(String Tipo) 
+    {
         this.Tipo = Tipo;
     }
     
@@ -49,11 +63,11 @@ public class InstrumentosBase
           InstrumentosBase Viento[]=new InstrumentosBase[3];
            int opcion1=0;
            do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de viento que desea:\n"
-             + "1.Flatua Dulce\n"
-             + "2.Saxofon\n"
-             + "3.Trompeta\n"
-                    + "4. Salir"));
+            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de viento que desea:"
+             + "\n1.Flatua Dulce"
+             + "\n2.Saxofon"
+             + "\n3.Trompeta"
+             + "\n4. Salir"));
             
              switch(opcion1)
           {
