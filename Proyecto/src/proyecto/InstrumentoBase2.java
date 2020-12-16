@@ -1,6 +1,16 @@
+/*
+Universidad Fidélitas
+Curso Introducción a la progromación
+Programa Tienda Musical Listen
+Clase Instrumentos de Cuerda
+Integrantes:
+Steven Campos Matamorros
+Mauricio Chacón Viales
+Jorge Ezquivel Poveda
+3er Cuatrimetre 2020
+ */
 
-
-package diagramametodo;
+package proyecto;
 
 import javax.swing.JOptionPane;
 public class InstrumentoBase2 
@@ -45,11 +55,11 @@ public class InstrumentoBase2
           InstrumentoBase2 Cuerda[]=new InstrumentoBase2[3];
            int opcion1=0;
            do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de cuerda que desea:\n"
-             + "1.Guitarra Electrica\n"
-             + "2.Ukelele Tenor\n"
-             + "3.Guitarra electroacustica\n"
-                    + "4. Salir"));
+            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de cuerda que desea:"
+             + "\n1.Guitarra Electrica"
+             + "\n2.Ukelele Tenor"
+             + "\n3.Guitarra electroacustica"
+             + "\n4. Salir"));
             
              switch(opcion1)
           {
