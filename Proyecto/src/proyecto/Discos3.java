@@ -63,11 +63,11 @@ private int Precio;
            int opcion1=0;
             Discos3 Dis3[]=new Discos3[3];
            do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el disco de reggueton que desea:\n"
-             + "1.Bad Bunny\n"
-             + "2.Ozuna\n"
-             + "3.Anuel\n"
-                    + "4. Salir"));
+            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el disco de reggueton que desea:"
+             + "\n1.Bad Bunny"
+             + "\n2.Ozuna"
+             + "\n3.Anuel"
+             + "\n4. Salir"));
             
              switch(opcion1)
           {
