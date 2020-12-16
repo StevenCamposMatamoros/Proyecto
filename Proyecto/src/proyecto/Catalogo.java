@@ -18,42 +18,29 @@ public class Catalogo
    //Atributos
    private int precio;
    private String NombreArticulo;
-   private int año;
-   private int Autor;
- 
-   
-   
-    public int getAño() {
-        return año;
-    }
 
-    public void setAño(int año) {
-        this.año = año;
-    }
 
-    public int getAutor() {
-        return Autor;
-    }
-
-    public void setAutor(int Autor) {
-        this.Autor = Autor;
-    }
-
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-    }
-
-    public String getNombreArticulo() {
+    public String getNombreArticulo() 
+    {
         return NombreArticulo;
     }
 
-    public void setNombreArticulo(String NombreArticulo) {
+    public void setNombreArticulo(String NombreArticulo) 
+    {
         this.NombreArticulo = NombreArticulo;
     }
+
+    public int getPrecio() 
+    {
+        return precio;
+    }
+
+    public void setPrecio(int precio) 
+    {
+        this.precio = precio;
+    }
+
+   
 
   
   //Metodos
