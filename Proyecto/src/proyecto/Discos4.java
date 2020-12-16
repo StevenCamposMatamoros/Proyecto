@@ -1,42 +1,51 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Universidad Fidélitas
+Curso Introducción a la progromación
+Programa Tienda Musical Listen
+Clase Discos Electrónica
+Integrantes:
+Steven Campos Matamorros
+Mauricio Chacón Viales
+Jorge Ezquivel Poveda
+3er Cuatrimetre 2020
  */
 package diagramametodo;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author PC
- */
-public class Discos4 {
+public class Discos4 
+{
     private int Precio;
     private String Nombre;
     private String Tipo;
 
-    public int getPrecio() {
+    public int getPrecio() 
+    {
         return Precio;
     }
 
-    public void setPrecio(int Precio) {
+    public void setPrecio(int Precio) 
+    {
         this.Precio = Precio;
     }
 
-    public String getNombre() {
+    public String getNombre() 
+    {
         return Nombre;
     }
 
-    public void setNombre(String Nombre) {
+    public void setNombre(String Nombre) 
+    {
         this.Nombre = Nombre;
     }
 
-    public String getTipo() {
+    public String getTipo() 
+    {
         return Tipo;
     }
 
-    public void setTipo(String Tipo) {
+    public void setTipo(String Tipo) 
+    {
         this.Tipo = Tipo;
     }
     
@@ -56,7 +65,7 @@ public class Discos4 {
              + "1.Marshmellow\n"
              + "2.Martin Garrix\n"
              + "3.Avicii\n"
-                    + "4. Salir"));
+             + "4. Salir"));
             
              switch(opcion1)
           {
