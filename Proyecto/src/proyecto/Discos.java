@@ -62,11 +62,11 @@ public class Discos
            int opcion1=0;
             Discos Dis[]=new Discos[3];
            do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el disco de salsa que desea:\n"
-             + "1.Marc Anthony\n"
-             + "2.Willie Colon\n"
-             + "3.Celia Cruz\n"
-                    + "4. Salir"));
+            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el disco de salsa que desea:"
+             + "\n1.Marc Anthony"
+             + "\n2.Willie Colon"
+             + "\n3.Celia Cruz"
+             + "\n4. Salir"));
             
              switch(opcion1)
           {
