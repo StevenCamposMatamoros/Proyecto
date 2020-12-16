@@ -19,27 +19,33 @@ public class InstrumentoBase2
     private String Nombre;
     private String Tipo;
 
-    public int getPrecio() {
+    public int getPrecio() 
+    {
         return Precio;
     }
 
-    public void setPrecio(int Precio) {
+    public void setPrecio(int Precio) 
+    {
         this.Precio = Precio;
     }
 
-    public String getNombre() {
+    public String getNombre() 
+    {
         return Nombre;
     }
 
-    public void setNombre(String Nombre) {
+    public void setNombre(String Nombre) 
+    {
         this.Nombre = Nombre;
     }
 
-    public String getTipo() {
+    public String getTipo() 
+    {
         return Tipo;
     }
 
-    public void setTipo(String Tipo) {
+    public void setTipo(String Tipo) 
+    {
         this.Tipo = Tipo;
     }
     
