@@ -18,29 +18,35 @@ public class Articulos_Usados
  private String Titulo;
  private String Categoria;
  private int precio;
- int opcion;
+ private int opcion;
 
-    public String getTitulo() {
+    public String getTitulo() 
+    {
         return Titulo;
     }
 
-    public void setTitulo(String Titulo) {
+    public void setTitulo(String Titulo) 
+    {
         this.Titulo = Titulo;
     }
 
-    public String getCategoria() {
+    public String getCategoria() 
+    {
         return Categoria;
     }
 
-    public void setCategoria(String Categoria) {
+    public void setCategoria(String Categoria) 
+    {
         this.Categoria = Categoria;
     }
 
-    public int getPrecio() {
+    public int getPrecio() 
+    {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(int precio) 
+    {
         this.precio = precio;
     }
  
