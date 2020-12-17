@@ -2,7 +2,7 @@
 Universidad Fidélitas
 Curso Introducción a la progromación
 Programa Tienda Musical Listen
-Clase Instrumentos de Viento
+Clase Instrumentos
 Integrantes:
 Steven Campos Matamorros
 Mauricio Chacón Viales
