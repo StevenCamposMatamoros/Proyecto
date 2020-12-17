@@ -25,11 +25,11 @@ public void MenuPrincipal()
     Reclamos Rec=new Reclamos();
 do
  {
-        Opcion=Integer.parseInt(JOptionPane.showInputDialog("******Bienvenido a la Tienda Musical Listen******\n"
+       Opcion=Integer.parseInt(JOptionPane.showInputDialog("******Bienvenido a la Tienda Musical Listen******\n"
                +"\nIngrese la opcion del tramite que desea realizar"
-               +"\n1.Ver Catalogo"
-               +"\n2.Comprar Articulo"
-               +"\n3.Vender Articulo"
+               +"\n1.Comprar Articulo"
+               +"\n2.Vender Articulo"
+               +"\n3.Realizar Reclamo"
                +"\n0.Salir"));
        
        switch(Opcion)
