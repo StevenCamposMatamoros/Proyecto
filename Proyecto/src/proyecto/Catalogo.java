@@ -20,6 +20,7 @@ public class Catalogo
    private String NombreArticulo;
    private String Categoria;
    
+   //Instancia de clases y arreglo de objetos
    Discos Dis[]=new Discos[3];
    Discos Dis2[]=new Discos[3];
    Discos Dis3[]=new Discos[3];
@@ -59,6 +60,7 @@ public class Catalogo
         this.Categoria = Categoria;
     }
 
+   //Metodo Constructor
     public Catalogo(int precio, String NombreArticulo, String Categoria) {
         this.precio = precio;
         this.NombreArticulo = NombreArticulo;
