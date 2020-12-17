@@ -15,11 +15,13 @@ import javax.swing.JOptionPane;
 
 public class Articulos_Usados 
 {
+ //Atributos
  private String Titulo;
  private String Categoria;
  private int precio;
  private int opcion;
  
+   //Metodo Constructor
    public Articulos_Usados(String Titulo, String Categoria, int precio, int opcion) 
     {
         this.Titulo = Titulo;
@@ -27,7 +29,8 @@ public class Articulos_Usados
         this.precio = precio;
         this.opcion = opcion;
     }
-
+    
+    //Setters y Getters
     public String getTitulo() 
     {
         return Titulo;
