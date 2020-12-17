@@ -59,7 +59,7 @@ public class Articulos_Usados
     }
  
  
- 
+ //Metodo Vender Articulo
  public void Vender_Articulo()
  {
     Titulo=JOptionPane.showInputDialog("Digite el nombre del articulo que desea vender:");
