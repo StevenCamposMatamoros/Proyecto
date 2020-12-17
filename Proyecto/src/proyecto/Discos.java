@@ -13,10 +13,12 @@ package proyecto;
 
 public class Discos 
 {
+    //Atributos
     private int Precio;
     private String Nombre;
     private String Tipo;
 
+    //Setters y Getters
     public int getPrecio() 
     {
         return Precio;
@@ -47,6 +49,7 @@ public class Discos
         this.Tipo = Tipo;
     }
     
+    //Metodo Constructor
      public  Discos(int Precio,String Nombre,String Tipo)
     {
         this.Precio=Precio;
