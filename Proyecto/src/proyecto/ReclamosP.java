@@ -4,7 +4,7 @@ package proyecto;
 import javax.swing.JOptionPane;
 
 
-public class ReclamosP 
+public class Reclamos 
 {
   private String nombre;
 private String apellidos;
