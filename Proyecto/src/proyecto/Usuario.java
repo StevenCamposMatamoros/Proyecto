@@ -15,11 +15,18 @@ import javax.swing.JOptionPane;
 
 public class Usuario 
 {
+    //Atributos
     private String Nombre;
     private String Apellido;
     private String Direccion;
 
-    
+    //Constructor
+    public Usuario(String Nombre, String Apellido, String Direccion) 
+    {
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Direccion = Direccion;
+    }
 
     public String getNombre() {
         return Nombre;
@@ -45,6 +52,7 @@ public class Usuario
         this.Direccion = Direccion;
     }
     
+    //Metodo Uusuario
     public void ObtenerInformacionUsuario()
     {
     Nombre=JOptionPane.showInputDialog("Ingrese su nombre:");
