@@ -19,6 +19,8 @@ private int IVA;
 private float MontoIVA;
 private int Subtotal;
 private float Total;
+Usuario usu1=new Usuario();
+Catalogo cat=new Catalogo(0,"","");
 
     public int getIVA() 
     {
@@ -58,6 +60,25 @@ private float Total;
     public void setTotal(float Total) 
     {
         this.Total = Total;
+    }
+    
+    public void Facturar()
+    {
+    Subtotal=cat.getPrecio();
+    MontoIVA=(Subtotal*13)/100;
+    Total=Subtotal+MontoIVA;
+    
+    JOptionPane.showConfirmDialog(null, "♪♪♪♪♪♪♪♪♪ Tienda Musical Listen ♪♪♪♪♪♪♪♪♪" 
+                                       +"\nCliente: "+usu1.getNombre()+" "+usu1.getApellido()
+                                       +"\nDirección:  "+usu1.getDireccion()
+                                       +"\n\nArticulo:  "+cat.getNombreArticulo()
+                                       +"\nCategoria:   "+cat.getCategoria()
+                                       +"\nPrecio:      $"+cat.getPrecio()
+                                       +"\n\nSubtotal:  $"+Subtotal
+                                       +"\nIVA 13%:   $"+MontoIVA
+                                       +"\nTotal a pagar: $"+Total);
+    
+    
     }
 
 
