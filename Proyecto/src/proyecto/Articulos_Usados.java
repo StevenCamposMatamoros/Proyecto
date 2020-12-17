@@ -19,6 +19,14 @@ public class Articulos_Usados
  private String Categoria;
  private int precio;
  private int opcion;
+ 
+   public Articulos_Usados(String Titulo, String Categoria, int precio, int opcion) 
+    {
+        this.Titulo = Titulo;
+        this.Categoria = Categoria;
+        this.precio = precio;
+        this.opcion = opcion;
+    }
 
     public String getTitulo() 
     {
@@ -54,9 +62,10 @@ public class Articulos_Usados
  
  public void Vender_Articulo()
  {
+    Titulo=JOptionPane.showInputDialog("Digite el nombre del articulo que desea vender:");
+    precio=Integer.parseInt(JOptionPane.showInputDialog("Digite el precio en el que desea vender el articulo:"));
  do{    
- Titulo=JOptionPane.showInputDialog("Digite el nombre del articulo que desea vender:");
- precio=Integer.parseInt(JOptionPane.showInputDialog("Digite el precio en el que desea vender el articulo:"));
+ 
  opcion=Integer.parseInt(JOptionPane.showInputDialog("Digite la opcion para la categoria del ariculo a vender:"
                                                      +"\n1.Disco"
                                                      +"\n2.Instrumento"));
@@ -67,8 +76,7 @@ public class Articulos_Usados
          Categoria="Disco";
      case 2:
          Categoria="Instrumento";
-     default:
-         JOptionPane.showMessageDialog(null, "Por Favor ingrese una opcion valida");
+     
  }
          
  }while(opcion!=1 && opcion!=2);
