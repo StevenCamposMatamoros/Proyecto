@@ -15,12 +15,10 @@ import javax.swing.JOptionPane;
 
 public class Catalogo 
 {
-   //Atributos
-   private int precio;
-   private String NombreArticulo;
-   private String Categoria;
    
-   //Instancia de clases y arreglo de objetos
+
+   
+   //Instnacia de clases y arreglos de objetos
    Discos Dis[]=new Discos[3];
    Discos Dis2[]=new Discos[3];
    Discos Dis3[]=new Discos[3];
@@ -29,50 +27,7 @@ public class Catalogo
    InstrumentosBase Cuerda[]=new InstrumentosBase[3];
    InstrumentosBase Percusion[]=new InstrumentosBase[3];
    Facturacion fac=new Facturacion();
-  
-    public int getPrecio() 
-    {
-        return precio;
-    }
 
-    public void setPrecio(int precio) 
-    {
-        this.precio = precio;
-    }
-
-    public String getNombreArticulo() 
-    {
-        return NombreArticulo;
-    }
-
-    public void setNombreArticulo(String NombreArticulo) 
-    {
-        this.NombreArticulo = NombreArticulo;
-    }
-
-    public String getCategoria() 
-    {
-        return Categoria;
-    }
-
-    public void setCategoria(String Categoria) 
-    {
-        this.Categoria = Categoria;
-    }
-
-   //Metodo Constructor
-    public Catalogo(int precio, String NombreArticulo, String Categoria) {
-        this.precio = precio;
-        this.NombreArticulo = NombreArticulo;
-        this.Categoria = Categoria;
-    }
-    
-    
-    
-    
-    
-
-  
   //Metodos
    
    public void MenuDisco()
@@ -101,23 +56,23 @@ public class Catalogo
           {
               case 1:
                  Dis[0]=new Discos(40,"Marc Anthony","Salsa");
-                 precio=Dis[0].getPrecio();
-                 NombreArticulo=Dis[0].getNombre();
-                 Categoria=Dis[0].getTipo();
-                 fac.Facturar();
+                fac.setPrecio(Dis[0].getPrecio());
+                fac.setNombre_Articulo(Dis[0].getNombre());
+                fac.setTipo(Dis[0].getTipo());
+                fac.Facturar();
                   break;
               case 2:
                   Dis[1]=new Discos(20,"Willie Colon","Salsa");
-                  precio=Dis[1].getPrecio();
-                  NombreArticulo=Dis[1].getNombre();
-                  Categoria=Dis[1].getTipo();
+                  fac.setPrecio(Dis[1].getPrecio());
+                  fac.setNombre_Articulo(Dis[1].getNombre());
+                  fac.setTipo(Dis[1].getTipo());
                   fac.Facturar();
                   break;
               case 3:
                  Dis[2]=new Discos(80,"Celia Cruz","Salsa");
-                 precio=Dis[2].getPrecio();
-                 NombreArticulo=Dis[2].getNombre();
-                 Categoria=Dis[2].getTipo();
+                 fac.setPrecio(Dis[2].getPrecio());
+                 fac.setNombre_Articulo(Dis[2].getNombre());
+                 fac.setTipo(Dis[2].getTipo());
                  fac.Facturar();
                   break;
               case 4:
@@ -141,23 +96,23 @@ public class Catalogo
           {
               case 1:
                  Dis2[0]=new Discos(100,"Prince Royce","Bachata");
-                 precio=Dis2[0].getPrecio();
-                 NombreArticulo=Dis2[0].getNombre();
-                 Categoria=Dis2[0].getTipo();
+                 fac.setPrecio(Dis2[0].getPrecio());
+                 fac.setNombre_Articulo(Dis2[0].getNombre());
+                 fac.setTipo(Dis2[0].getTipo());
                  fac.Facturar();
                   break;
               case 2:
                   Dis2[1]=new Discos(120,"Romeo Santos","Bachata");
-                  precio=Dis2[1].getPrecio();
-                  NombreArticulo=Dis2[1].getNombre();
-                  Categoria=Dis2[1].getTipo();
+                  fac.setPrecio(Dis2[1].getPrecio());
+                  fac.setNombre_Articulo(Dis2[1].getNombre());
+                  fac.setTipo(Dis2[1].getTipo());
                   fac.Facturar();
                   break;
               case 3:
                  Dis2[2]=new Discos(80,"Aventura","Bachata");
-                 precio=Dis2[2].getPrecio();
-                 NombreArticulo=Dis2[2].getNombre();
-                 Categoria=Dis2[2].getTipo();
+                 fac.setPrecio(Dis2[2].getPrecio());
+                 fac.setNombre_Articulo(Dis2[2].getNombre());
+                 fac.setTipo(Dis2[2].getTipo());
                  fac.Facturar();
                  break;
               case 4:
@@ -181,23 +136,23 @@ public class Catalogo
           {
               case 1:
                  Dis3[0]=new Discos(20,"Bad Bunny","reggueton");
-                 precio=Dis3[0].getPrecio();
-                 NombreArticulo=Dis3[0].getNombre();
-                 Categoria=Dis3[0].getTipo();
+                 fac.setPrecio(Dis3[0].getPrecio());
+                 fac.setNombre_Articulo(Dis3[0].getNombre());
+                 fac.setTipo(Dis3[0].getTipo());
                  fac.Facturar();
                   break;
               case 2:
                   Dis3[1]=new Discos(25,"Ozuna","reggueton");
-                  precio=Dis3[1].getPrecio();
-                  NombreArticulo=Dis3[1].getNombre();
-                  Categoria=Dis3[1].getTipo();
+                  fac.setPrecio(Dis3[1].getPrecio());
+                  fac.setNombre_Articulo(Dis3[1].getNombre());
+                  fac.setTipo(Dis3[1].getTipo());
                   fac.Facturar();
                   break;
               case 3:
                  Dis3[2]=new Discos(30,"Anuel","reggueton");
-                 precio=Dis3[2].getPrecio();
-                 NombreArticulo=Dis3[2].getNombre();
-                 Categoria=Dis3[2].getTipo();
+                 fac.setPrecio(Dis3[2].getPrecio());
+                 fac.setNombre_Articulo(Dis3[2].getNombre());
+                 fac.setTipo(Dis3[2].getTipo());
                  fac.Facturar();
                  break;
               case 4:
@@ -221,23 +176,23 @@ public class Catalogo
           {
               case 1:
                  Dis4[0]=new Discos(70,"Marshmello","electronica");
-                 precio=Dis4[0].getPrecio();
-                 NombreArticulo=Dis4[0].getNombre();
-                 Categoria=Dis4[0].getTipo();
+                 fac.setPrecio(Dis4[0].getPrecio());
+                 fac.setNombre_Articulo(Dis4[0].getNombre());
+                 fac.setTipo(Dis4[0].getTipo());
                  fac.Facturar();
                  break;
               case 2:
                   Dis4[1]=new Discos(60,"Martin Garrix","electronica");
-                  precio=Dis4[1].getPrecio();
-                  NombreArticulo=Dis4[1].getNombre();
-                  Categoria=Dis4[1].getTipo();
+                  fac.setPrecio(Dis4[1].getPrecio());
+                  fac.setNombre_Articulo(Dis4[1].getNombre());
+                  fac.setTipo(Dis4[1].getTipo());
                   fac.Facturar();
                   break;
               case 3:
                  Dis4[2]=new Discos(55,"Avicii","electronica");
-                 precio=Dis4[2].getPrecio();
-                 NombreArticulo=Dis4[2].getNombre();
-                 Categoria=Dis4[2].getTipo();
+                 fac.setPrecio(Dis4[2].getPrecio());
+                 fac.setNombre_Articulo(Dis4[2].getNombre());
+                 fac.setTipo(Dis4[2].getTipo());
                  fac.Facturar();
                  break;
               case 4:
@@ -288,24 +243,24 @@ public class Catalogo
           {
               case 1:
                   Viento[0]=new InstrumentosBase(50,"Flauta Dulce","Viento");
-                  precio=Viento[0].getPrecio();
-                  NombreArticulo=Viento[0].getNombre();
-                  Categoria=Viento[0].getTipo();
+                  fac.setPrecio(Viento[0].getPrecio());
+                  fac.setNombre_Articulo(Viento[0].getNombre());
+                  fac.setTipo(Viento[0].getTipo());
                   fac.Facturar();
                 
                   break;
               case 2:
                  Viento[1]=new InstrumentosBase(300,"Saxofon","Viento");
-                 precio=Viento[1].getPrecio();
-                 NombreArticulo=Viento[1].getNombre();
-                 Categoria=Viento[1].getTipo();
+                 fac.setPrecio(Viento[1].getPrecio());
+                 fac.setNombre_Articulo(Viento[1].getNombre());
+                 fac.setTipo(Viento[1].getTipo());
                  fac.Facturar();
                  break;
               case 3:
                  Viento[2]=new InstrumentosBase(150,"Trompeta","Viento");
-                 precio=Viento[2].getPrecio();
-                 NombreArticulo=Viento[2].getNombre();
-                 Categoria=Viento[2].getTipo();
+                 fac.setPrecio(Viento[2].getPrecio());
+                 fac.setNombre_Articulo(Viento[2].getNombre());
+                 fac.setTipo(Viento[2].getTipo());
                  fac.Facturar();
                  break;
               case 4:
@@ -330,23 +285,23 @@ public class Catalogo
           {
               case 1:
                  Cuerda[0]=new InstrumentosBase(240,"Guitarra Electrica","Cuerda");
-                 precio=Cuerda[0].getPrecio();
-                 NombreArticulo=Cuerda[0].getNombre();
-                 Categoria=Cuerda[0].getTipo();
+                 fac.setPrecio(Cuerda[0].getPrecio());
+                 fac.setNombre_Articulo(Cuerda[0].getNombre());
+                 fac.setTipo(Cuerda[0].getTipo());
                  fac.Facturar();
                  break;
               case 2:
                   Cuerda[1]=new InstrumentosBase(190,"Ukelele Tenor","Cuerda");
-                  precio=Cuerda[1].getPrecio();
-                  NombreArticulo=Cuerda[1].getNombre();
-                  Categoria=Cuerda[1].getTipo();
+                  fac.setPrecio(Cuerda[1].getPrecio());
+                  fac.setNombre_Articulo(Cuerda[1].getNombre());
+                  fac.setTipo(Cuerda[1].getTipo());
                   fac.Facturar();
                   break;
               case 3:
                  Cuerda[2]=new InstrumentosBase(380,"Guitarra electroacustica","Cuerda");
-                 precio=Cuerda[2].getPrecio();
-                 NombreArticulo=Cuerda[2].getNombre();
-                 Categoria=Cuerda[2].getTipo();
+                 fac.setPrecio(Cuerda[2].getPrecio());
+                 fac.setNombre_Articulo(Cuerda[2].getNombre());
+                 fac.setTipo(Cuerda[2].getTipo());
                  fac.Facturar();
                   break;
               case 4:
@@ -370,24 +325,24 @@ public class Catalogo
           {
               case 1:
                  Percusion[0]=new InstrumentosBase(140,"Bombo","Percusion");
-                 precio=Percusion[0].getPrecio();
-                 NombreArticulo=Percusion[0].getNombre();
-                 Categoria=Percusion[0].getTipo();
+                 fac.setPrecio(Percusion[0].getPrecio());
+                 fac.setNombre_Articulo(Percusion[0].getNombre());
+                 fac.setTipo(Percusion[0].getTipo());
                  fac.Facturar();
                  
                   break;
               case 2:
                   Percusion[1]=new InstrumentosBase(200,"Platillos Dobles","Percusion");
-                  precio=Percusion[1].getPrecio();
-                  NombreArticulo=Percusion[1].getNombre();
-                  Categoria=Percusion[1].getTipo();
+                  fac.setPrecio(Percusion[1].getPrecio());
+                  fac.setNombre_Articulo(Percusion[1].getNombre());
+                  fac.setTipo(Percusion[1].getTipo());
                   fac.Facturar();
                   break;
               case 3:
                  Percusion[2]=new InstrumentosBase(80,"Cajon","Percusion");
-                 precio=Percusion[2].getPrecio();
-                 NombreArticulo=Percusion[2].getNombre();
-                 Categoria=Percusion[2].getTipo();
+                 fac.setPrecio(Percusion[2].getPrecio());
+                 fac.setNombre_Articulo(Percusion[2].getNombre());
+                 fac.setTipo(Percusion[2].getTipo());
                  fac.Facturar();
                   break;
               case 4:
