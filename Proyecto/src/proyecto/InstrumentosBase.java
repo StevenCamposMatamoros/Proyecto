@@ -11,7 +11,7 @@ Jorge Ezquivel Poveda
  */
 package proyecto;
 
-import javax.swing.JOptionPane;
+
 
 public class InstrumentosBase 
 {
@@ -20,6 +20,7 @@ public class InstrumentosBase
     private int Precio;
     private String Nombre;
     private String Tipo;
+    
 
     public int getPrecio() 
     {
@@ -56,40 +57,10 @@ public class InstrumentosBase
         this.Precio=Precio;
         this.Nombre=Nombre;
         this.Tipo=Tipo;
-    }
         
-      public void Pregunta()
-      {
-          InstrumentosBase Viento[]=new InstrumentosBase[3];
-           int opcion1=0;
-           do{
-            opcion1= Integer.parseInt(JOptionPane.showInputDialog("Digite el instrumento de viento que desea:"
-             + "\n1.Flatua Dulce"
-             + "\n2.Saxofon"
-             + "\n3.Trompeta"
-             + "\n4. Salir"));
-            
-             switch(opcion1)
-          {
-              case 1:
-                  Viento[0]=new InstrumentosBase(50,"Flauta Dulce","Viento");
-                
-                  break;
-              case 2:
-                 Viento[1]=new InstrumentosBase(300,"Saxofon","Viento");
-                  break;
-              case 3:
-                 Viento[0]=new InstrumentosBase(150,"Trompeta","Viento");
-                  break;
-              case 4:
-                   JOptionPane.showMessageDialog(null, "Muchas Gracias" );
-                   break;
-              default:
-                  JOptionPane.showMessageDialog(null,"Digite una opcion correcta");
-                 break;
-          }
-       }while(opcion1!=4);
-      } 
+        
+    }
+    
 }
     
 
