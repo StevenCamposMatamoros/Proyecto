@@ -2,7 +2,7 @@
 Universidad Fidélitas
 Curso Introducción a la progromación
 Programa Tienda Musical Listen
-Clase Discos Salsa
+Clase Discos 
 Integrantes:
 Steven Campos Matamorros
 Mauricio Chacón Viales
@@ -10,9 +10,6 @@ Jorge Ezquivel Poveda
 3er Cuatrimetre 2020
  */
 package proyecto;
-
-import javax.swing.JOptionPane;
-
 
 public class Discos 
 {
