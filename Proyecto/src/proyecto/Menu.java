@@ -19,8 +19,8 @@ public class Menu
   
 public void MenuPrincipal()
 {
+    //instancia de clases
     Proyecto cat=new Proyecto();
-    Usuario usu1=new Usuario();
     Articulos_Usados usados=new Articulos_Usados("","",0,0);
     Reclamos Rec=new Reclamos();
 do
@@ -35,7 +35,6 @@ do
        switch(Opcion)
        {
            case 1:
-               usu1.ObtenerInformacionUsuario();
                cat.Menu_Catalogo();
                break;
            case 2:               
