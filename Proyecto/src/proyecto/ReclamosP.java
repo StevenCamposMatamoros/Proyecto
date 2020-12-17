@@ -1,5 +1,5 @@
 
-package reclamos1;
+package proyecto;
 
 import javax.swing.JOptionPane;
 
