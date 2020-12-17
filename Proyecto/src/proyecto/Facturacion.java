@@ -15,10 +15,13 @@ import javax.swing.JOptionPane;
 
 public class Facturacion 
 {
+//Atributos
 private int IVA;
 private float MontoIVA;
 private int Subtotal;
 private float Total;
+
+//Instancia de Clases
 Usuario usu1=new Usuario();
 Catalogo cat=new Catalogo(0,"","");
 
@@ -62,6 +65,7 @@ Catalogo cat=new Catalogo(0,"","");
         this.Total = Total;
     }
     
+    //Metodo Facturar
     public void Facturar()
     {
     Subtotal=cat.getPrecio();
