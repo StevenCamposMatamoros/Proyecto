@@ -15,6 +15,8 @@ import javax.swing.JOptionPane;
 
 public class Reclamos 
 {
+    
+    //Atributos
     private String nombre;
     private String apellidos;
     private int cedula;
@@ -46,6 +48,8 @@ public class Reclamos
     public void setCedula(int cedula) {
         this.cedula = cedula;
     }
+    
+    //Metodo Reclamo
     public void ReclamoP()
     {
       JOptionPane.showInputDialog("Aqui usted podrá hacer el reclamo de su articulo");
