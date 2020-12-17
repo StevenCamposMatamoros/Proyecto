@@ -19,7 +19,7 @@ public class Usuario
     private String Nombre;
     private String Apellido;
     private String Direccion;
-
+    
     //Constructor
     public Usuario(String Nombre, String Apellido, String Direccion) 
     {
@@ -28,6 +28,8 @@ public class Usuario
         this.Direccion = Direccion;
     }
 
+    
+    //Setters y Getters
     public String getNombre() {
         return Nombre;
     }
@@ -57,7 +59,7 @@ public class Usuario
     {
     Nombre=JOptionPane.showInputDialog("Ingrese su nombre:");
     Apellido=JOptionPane.showInputDialog("Ingrese su Apellido:");
-    Direccion=JOptionPane.showInputDialog("Ingrese su Direccion con el formato Calle, Distrito, Canton, Provincia:");
+    Direccion=JOptionPane.showInputDialog("Ingrese su Direccion con el formato Provincia, Distrito, Canton, Calle:");
     
     }
     
